@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-half">
+      <img src="./assets/food.jpg" alt="Background Image">
+    </div>
+    <div class="right-half">
+      <div class="login-background">
+        <img src="./assets/logo.png" alt="Logo">
+      </div>
+      <form action="login-action" method="post">
+        <h1>Sign In</h1>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <button class="form_button" type="submit" onclick="redirectToAnotherPage()">LOGIN</button>
+        <div class="forgot-password">
+          <a href="#">Forgot Password? <b>Click here </b></a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<script>
+  function redirectToAnotherPage() {
+    window.location.href = 'menu_items.html';
+  }
+</script>
+
+</html>
